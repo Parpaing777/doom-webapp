@@ -33,14 +33,14 @@ For sake of simplicity, we will use azure portal as much as possible; but there 
 1) Sign in to the [Azure portal](https://portal.azure.com/) and follow these steps to create your Azure App Service resources.
 2) In the Azure portal:
          On the App Services page, select + Create, then select + Web App from the drop-down menu.
-3) On the Create Web App page, fill out the form as follows:
--Resource Group → Select Create new and use a name of doom-resourcegrp.
--Name → name it *doom-webapp* (for simplicity) . This name must be unique across Azure.
--Runtime stack → Python 3.9.
--Region → Any Azure region near you.
--App Service Plan → Under Pricing plan, select Explore pricing plans to select a different App Service plan (choose a free one)
+3) On the Create Web App page, fill out the form as follows: <br>
+-Resource Group → Select Create new and use a name of *doom-resourcegrp*. <br>
+-Name → name it *doom-webapp* (for simplicity) . This name must be unique across Azure. <br>
+-Runtime stack → Python 3.9.  
+-Region → Any Azure region near you.<br>
+-App Service Plan → Under Pricing plan, select Explore pricing plans to select a different App Service plan (choose a free one)<br>
 
-4) On the main Create Web App page, select the Review + create at the bottom of the screen.
+4) On the main Create Web App page, select the Review + create at the bottom of the screen.  
    This will take you to the Review page. Select Create to create your App Service.
 
 
