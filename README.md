@@ -16,7 +16,7 @@ If you want to run the game on your browser locally first before deploying to th
 3) Go to the application folder: 
       " cd doom-webapp "
 4) Create a virtual environment for the app:
-      "python3 -m venv .venv
+      "python3 -m venv .venv \
        source .venv/bin/activate "
 5) Install the dependencies:
       "pip install -r requirements.txt"
