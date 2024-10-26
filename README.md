@@ -2,10 +2,10 @@
 This is the repo of the files required for deploying Classic DOOM Ultimate to Azure Web Apps
 
 # Pre-requisits 
--WSL Ubuntu
--Azure subscription (student preferably because it's free)
--A good internet connection 
--PC (Even a potato PC can work DOOM)
+-WSL Ubuntu \
+-Azure subscription (student preferably because it's free)\
+-A good internet connection \
+-PC (Even a potato PC can work DOOM) \
 
 # To Run Locally
 ### NOTE : THIS VERSION DOES NOT RUN ON MOBILE (ANDROID, IOS) IT CAN ONLY RUN ON PC(WINDOWS/MAC) ###
@@ -24,3 +24,10 @@ If you want to run the game on your browser locally first before deploying to th
       " python app.py "
 7) Open in Browser:\
    Go to " http://localhost:5000 "
+
+# Deployment 
+Now that we have tested the game functionality locally, we can proceed to upload the game to our Azure Web App
+For sake of simplicity, we will use azure portal as much as possible; but there are some instances that we will have to use CLI 
+
+Firstly, we will create a web app in Azure
+1) Sign in to the Azure portal {https://portal.azure.com/} and follow these steps to create your Azure App Service resources.
