@@ -16,8 +16,8 @@ If you want to run the game on your browser locally first before deploying to th
 3) Go to the application folder: <br>
       ` cd doom-webapp `
 4) Create a virtual environment for the app:<br>
-      `python3 -m venv .venv <br>
-       source .venv/bin/activate `
+      `python3 -m venv .venv ` <br>
+      ` source .venv/bin/activate `
 5) Install the dependencies:<br>
       `pip install -r requirements.txt`
 6) Run the app:<br>
@@ -31,3 +31,16 @@ For sake of simplicity, we will use azure portal as much as possible; but there 
 
 ## Firstly, we will create a web app in Azure
 1) Sign in to the [Azure portal](https://portal.azure.com/) and follow these steps to create your Azure App Service resources.
+2) In the Azure portal:
+         On the App Services page, select + Create, then select + Web App from the drop-down menu.
+3) On the Create Web App page, fill out the form as follows:
+-Resource Group → Select Create new and use a name of doom-resourcegrp.
+-Name → name it *doom-webapp* (for simplicity) . This name must be unique across Azure.
+-Runtime stack → Python 3.9.
+-Region → Any Azure region near you.
+-App Service Plan → Under Pricing plan, select Explore pricing plans to select a different App Service plan (choose a free one)
+
+4) On the main Create Web App page, select the Review + create at the bottom of the screen.
+   This will take you to the Review page. Select Create to create your App Service.
+
+
