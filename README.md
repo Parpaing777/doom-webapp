@@ -13,7 +13,7 @@ If you want to run the game on your browser locally first before deploying to th
 
 1) Open Terminal with administrator
 2) Open Ubuntu terminal
-3) Go to the application folder: \
+3) Go to the application folder: t\
       " cd doom-webapp "
 4) Create a virtual environment for the app:\
       "python3 -m venv .venv \
