@@ -30,4 +30,4 @@ Now that we have tested the game functionality locally, we can proceed to upload
 For sake of simplicity, we will use azure portal as much as possible; but there are some instances that we will have to use CLI 
 
 ## Firstly, we will create a web app in Azure
-1) Sign in to the [Azure portal] ( https://portal.azure.com/ ) and follow these steps to create your Azure App Service resources.
+1) Sign in to the [Azure portal](https://portal.azure.com/) and follow these steps to create your Azure App Service resources.
