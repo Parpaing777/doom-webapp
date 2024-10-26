@@ -67,10 +67,10 @@ Here, we will be using the ZIP Deploy method.
 
 3) Upload the Zip file to Azure  
    The az webapp deploy command can be used to upload and deploy a zip file to Azure.  
-` az webapp deploy \  
-    --name doom-webapp \  
-    --resource-group doom-resourcegrp \  
-    --src-path doom-webapp.zip `
+` az webapp deploy \`  
+    `--name doom-webapp \`  
+    `--resource-group doom-resourcegrp \`  
+    `--src-path doom-webapp.zip`  
 
 After all the steps have been done, you can launch your app by going to the default domain of your web app.
 Congratulations! Now you have successfully ported DOOM on your azure web app.  
