@@ -45,4 +45,42 @@ For sake of simplicity, we will use azure portal as much as possible; but there 
 
 ## Deploy DOOM 
 After we have created our web app, we can now deploy DOOM to the web app.
+### Deployment Steps
+There are different ways of deploying the application to the web app.  
+Here, we will be using the ZIP Deploy method.  
 
+1) Enable Build Automation
+   When deploying a ZIP file of your Python code, you need to set a flag to enable Azure build automation.  
+   The build automation will install any necessary requirements and package the application to run on Azure.  
+      - On the page for the web app in the Azure portal :  
+              - Select Environment variables under the Settings header in the left toolbar to bring up the Application settings  
+              - Under Application settings, select New application setting.  
+      - Using the dialog, enter a new setting with:  
+            - Name → SCM_DO_BUILD_DURING_DEPLOYMENT  
+            - Value → true  
+      - Select the Save to save your settings.  
+
+2) Create a Zip file of your application  
+   - Next, create a ZIP file of your application.  
+   - You only need to include components of the application itself.  
+   - You do not need to include any files or directories that start with a dot `(.)` such as `.venv `, ` .gitignore`, `.github`, or `.vscode`.  
+
+3) Upload the Zip file to Azure  
+   The az webapp deploy command can be used to upload and deploy a zip file to Azure.  
+` az webapp deploy \
+    --name doom-webapp \
+    --resource-group doom-resourcegrp \
+    --src-path doom-webapp.zip `
+
+After all the steps have been done, you can launch your app by going to the default domain of your web app.
+Congratulations! Now you have successfully ported DOOM on your azure web app.  
+
+> Note that I have skipped the step of setting up a start up script.  
+> Because in our scenario, we don't need to do it.  
+> But it may be a cruicial step in deploying other types of applications.
+
+If you feel like I have missed out some steps or unclear about my instrusctions, you can refer to [this](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=fastapi%2Cwindows%2Cazure-portal%2Czip-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli#sample-application) link and follow the steps mentioned.  
+
+*Good Luck!* ;)
+
+   
