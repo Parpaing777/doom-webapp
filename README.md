@@ -43,4 +43,6 @@ For sake of simplicity, we will use azure portal as much as possible; but there 
 4) On the main Create Web App page, select the Review + create at the bottom of the screen.  
    This will take you to the Review page. Select Create to create your App Service.
 
+## Deploy DOOM 
+After we have created our web app, we can now deploy DOOM to the web app.
 
